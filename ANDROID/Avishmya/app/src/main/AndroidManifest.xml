@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.user.avishmya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Frontpage">
+            ///////////////
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Adv" />
+        <activity
+            android:name=".mainpage"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".orderlist" />
+        <activity android:name=".seat" />
+        <activity android:name=".Thank" />
+        <activity
+            android:name=".Pop_up_showorder"
+            android:theme="@style/AppTheme.popup">
+
+        </activity>
+        <activity android:name=".selectseat" android:theme="@style/AppTheme.popup">
+
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:id="@+id/lsl"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:id="@+id/limage"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="10dp"
+                android:text="New Text"
+                android:id="@+id/lname"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginBottom="1dp"
+                android:textSize="10dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:id="@+id/lqnty"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fe0000"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:id="@+id/lprice"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:padding="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

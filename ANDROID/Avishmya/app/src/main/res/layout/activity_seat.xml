@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.user.avishmya.seat">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#000000" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView11"
+                android:background="@drawable/logo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Avishmya"
+                android:id="@+id/textView24"
+                android:layout_weight="1"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:textSize="25dp"
+                android:fontFamily="cursive"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView12"
+            android:layout_gravity="center"
+            android:background="@drawable/jj"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat Management"
+            android:id="@+id/textView25"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. of Person "
+                    android:id="@+id/textView6"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subb"
+                    android:src="@drawable/sub" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/number"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pluse"
+                    android:src="@drawable/pluse" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Available Seat"
+                android:id="@+id/textView26"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/showseatt"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/seatbg"
+                android:hint="Select seat"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:id="@+id/textView27"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Name"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="reserve"
+            android:id="@+id/button12"
+            android:layout_gravity="center"
+            android:background="#030303"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</RelativeLayout>

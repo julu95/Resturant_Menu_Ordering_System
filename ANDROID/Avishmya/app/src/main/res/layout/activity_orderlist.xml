@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.user.avishmya.orderlist">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#000000" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageView13"
+                    android:background="@drawable/logo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avishmya"
+                    android:id="@+id/textView29"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold|italic"
+                    android:textSize="25dp"
+                    android:fontFamily="cursive"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-: Order List :-"
+                android:id="@+id/textView23"
+                android:layout_gravity="center"
+                android:textColor="#fe0000"
+                android:textStyle="bold" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_margin="5dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ff0101"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="pay it"
+                    android:id="@+id/button9"
+                    android:layout_gravity="right"
+                    android:textColor="#ffffff"
+                    android:background="#000000"
+                    android:textStyle="bold|italic"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="refresh status"
+                    android:id="@+id/button10"
+                    android:layout_gravity="right"
+                    android:textColor="#ffffff"
+                    android:background="#000000"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView30"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ff0101"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
